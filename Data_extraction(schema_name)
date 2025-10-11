@@ -1,17 +1,17 @@
 # This code assumes the connection variables (sql_jdbc_url, clickhouse_jdbc_url, etc.)
 # have already been defined and are available in your Spark session.
 
-# 1. Define the source tables with their full schema names
+# 1. Define the source tables with their full schema names and it is different 
 source_tables = [
-    "ED.EmploymentHistoryDetails",
-    "ED.QualificationDetails",
-    "Common.QualificationMaster"
+    "ED.Table_1",
+    "ED.Table_2",
+    "Common.Table_3"
 ]
 
 # 2. Define the target database in ClickHouse
-clickhouse_database = "ELCM_QADB"
+clickhouse_database = "Database_name"
 
-print("🚀 Starting data transfer process...\n")
+print(" Starting data transfer process...\n")
 
 # 3. Loop through each table to read, count, and write
 for sql_full_table_name in source_tables:
@@ -64,4 +64,4 @@ for sql_full_table_name in source_tables:
     
     print(f"--- Finished processing {sql_full_table_name}. ---\n")
 
-print("✅ All tables have been processed. Transfer complete!")
+print(" All tables have been processed. Transfer complete!")

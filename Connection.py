@@ -1,9 +1,9 @@
 # sql server config
-sql_server_host = "172.16.68.4"
-sql_server_port = "1433"
-sql_database = "ELCM_QADB" 
-sql_user = "testadmin"
-sql_password = "Cner@321" 
+sql_server_host = ""
+sql_server_port = ""
+sql_database = "" 
+sql_user = ""
+sql_password = "" 
 
 sql_jdbc_url = f"jdbc:sqlserver://{sql_server_host}:{sql_server_port};databaseName={sql_database};trustServerCertificate=true"
 
@@ -14,11 +14,11 @@ sql_connection_properties = {
 }
 
 # clcikhouse config
-clickhouse_host = "172.16.3.6"
-clickhouse_port = "8123"
-clickhouse_database = "default"
-clickhouse_user = "devadmin"
-clickhouse_password = "Dev12837sadqdk"
+clickhouse_host = ""
+clickhouse_port = ""
+clickhouse_database = ""
+clickhouse_user = ""
+clickhouse_password = ""
 
 clickhouse_jdbc_url = f"jdbc:clickhouse://{clickhouse_host}:{clickhouse_port}/{clickhouse_database}"
 
@@ -40,9 +40,9 @@ try:
         table="dbo.EmployeeAttributeDetails",
         properties=sql_connection_properties
     ).limit(1).count()
-    print("✅ Success: Connection to SQL Server is established.")
+    print(" Success: Connection to SQL Server is established.")
 except Exception as e:
-    print("❌ Failure: Could not connect to SQL Server.")
+    print(" Failure: Could not connect to SQL Server.")
     print(f"   Error: {str(e)[:500]}")
 
 # --- Test ClickHouse Connection ---
@@ -54,8 +54,8 @@ try:
         table=test_query,
         properties=clickhouse_connection_properties
     ).count()
-    print("✅ Success: Connection to ClickHouse is established.")
+    print("  Success: Connection to ClickHouse is established.")
 except Exception as e:
-    print("❌ Failure: Could not connect to ClickHouse.")
+    print(" Failure: Could not connect to ClickHouse.")
     print(f"   Error: {str(e)[:500]}")
 

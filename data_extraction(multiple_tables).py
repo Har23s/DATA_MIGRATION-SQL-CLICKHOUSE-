@@ -3,16 +3,16 @@
 
 # 1. Define the list of tables to transfer
 source_tables = [
-    "EmployeeAttributeDetails",
-    "ReqRec_EmployeeDetails",
-    "AttributeTypeMaster",
-    "AttributeTypeUnitMaster"
+    "Tbale 1",
+    "Table 2  ",
+    "Table 3",
+    "Table 4"
 ]
 
 # 2. Define the target database in ClickHouse
-clickhouse_database = "ELCM_QADB"
+clickhouse_database = " Db_name "
 
-print("🚀 Starting data transfer process...\n")
+print(" Starting data transfer process...\n")
 
 # 3. Loop through each table to read, count, and write
 for table_name in source_tables:
@@ -61,4 +61,4 @@ for table_name in source_tables:
     
     print(f"--- Finished processing {sql_full_table_name}. ---\n")
 
-print("✅ All tables have been processed. Transfer complete!")
+print(" All tables have been processed. Transfer complete!")

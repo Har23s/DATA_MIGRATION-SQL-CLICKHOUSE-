@@ -11,7 +11,7 @@ source_tables = [
 # 2. Define the target database in ClickHouse
 clickhouse_database = "Database_name"
 
-print(" Starting data transfer process...\n")
+print(" Starting data transfer process")
 
 # 3. Loop through each table to read, count, and write
 for sql_full_table_name in source_tables:
@@ -35,7 +35,7 @@ for sql_full_table_name in source_tables:
             table=sql_full_table_name,
             properties=sql_connection_properties
         )
-        print("    -> Read successful.")
+        print("  -> Read successful.")
     except Exception as e:
         print(f"    -> ERROR reading table '{sql_full_table_name}': {e}")
         print(f"--- Skipping this table due to read error. ---\n")

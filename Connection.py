@@ -45,7 +45,6 @@ except Exception as e:
     print(" Failure: Could not connect to SQL Server.")
     print(f"   Error: {str(e)[:500]}")
 
-# --- Test ClickHouse Connection ---
 # print("\nAttempting to connect to ClickHouse...")
 # try:
 #     test_query = "(SELECT 1) AS connection_test"
@@ -57,5 +56,5 @@ except Exception as e:
 #     print("  Success: Connection to ClickHouse is established.")
 # except Exception as e:
 #     print(" Failure: Could not connect to ClickHouse.")
-#     print(f"   Error: {str(e)[:500]}")
+#     print(f"  Error: {str(e)[:500]}")
 

@@ -82,7 +82,7 @@ Nullability: Columns that allow NULL values must be explicitly wrapped in the Nu
 Example Translation:
 
 <details>
-<summary>Click to view an example SQL Server to ClickHouse DDL conversion</summary>
+Click to view an example SQL Server to ClickHouse DDL conversion
 
 SQL Server Source:
 

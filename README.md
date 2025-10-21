@@ -123,10 +123,7 @@ Example Verification in ClickHouse:
 SQL
 SELECT count(*) FROM your_database.YourTable1;
 
-Troubleshooting Common Issues
-Invalid object name 'schema.TableName': This error from SQL Server means it cannot find the table you specified. 
-Double-check that the schema and table names in your source_tables list are spelled correctly and exist in the source database.
-Column 'ColumnName' not found in schema: This error occurs during the write to ClickHouse. It indicates a mismatch between the DataFrame's schema (read from SQL Server) and the ClickHouse table's schema. This often happens with computed columns in SQL Server. The most reliable solution is to define the column as a standard, writable type in ClickHouse (e.g., Nullable(String)) and let Spark write the computed values directly.
+
 
 
 

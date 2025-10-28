@@ -45,16 +45,16 @@ except Exception as e:
     print(" Failure: Could not connect to SQL Server.")
     print(f"   Error: {str(e)[:500]}")
 
-# print("\nAttempting to connect to ClickHouse...")
-# try:
-#     test_query = "(SELECT 1) AS connection_test"
-#     spark.read.jdbc(
-#         url=clickhouse_jdbc_url,
-#         table=test_query,
-#         properties=clickhouse_connection_properties
-#     ).count()
-#     print("  Success: Connection to ClickHouse is established.")
-# except Exception as e:
-#     print(" Failure: Could not connect to ClickHouse.")
-#     print(f"  Error: {str(e)[:500]}")
+print("\nAttempting to connect to ClickHousee...")
+try:
+    test_query = "(SELECT 1) AS connection_test"
+    spark.read.jdbc(
+        url=clickhouse_jdbc_url,
+        table=test_query,
+        properties=clickhouse_connection_properties
+    ).count()
+    print("  Success: Connection to ClickHouse is established.")
+except Exception as e:
+    print(" Failure: Could not connect to ClickHouse.")
+    print(f"  Error: {str(e)[:500]}")
 

@@ -41,7 +41,7 @@ for sql_full_table_name in source_tables:
         print(f"--- Skipping this table due to read error. ---\n")
         continue  # Skip to the next table
 
-    # STEP 2: Count the records
+    # STEP 2: Countt the records
     print("  Step 2/3: Counting records...")
     try:
         record_count = df_sql.count()

@@ -47,18 +47,18 @@ for table_name in source_tables:
         print(f"    -> ERROR counting records: {e}")
 
     # STEP 3: Write data to ClickHouse
-#     print(f"  Step 3/3: Writing to ClickHouse table '{clickhouse_full_table_name}'...")
-#     try:
-#         df_sql.write.jdbc(
-#             url=clickhouse_jdbc_url,
-#             table=clickhouse_full_table_name,
-#             mode="append",  # Use "append" to add data to the existing table
-#             properties=clickhouse_connection_properties
-#         )
-#         print("    -> Write successful.")
-#     except Exception as e:
-#         print(f"    -> ERROR writing to ClickHouse: {e}")
+    print(f"  Step 3/3: Writing to ClickHouse table '{clickhouse_full_table_name}'...")
+    try:
+        df_sql.write.jdbc(
+            url=clickhouse_jdbc_url,
+            table=clickhouse_full_table_name,
+            mode="append",  # Use "append" to add data to the existing table
+            properties=clickhouse_connection_properties
+        )
+        print("    -> Write successful.")
+    except Exception as e:
+        print(f"    -> ERROR writing to ClickHouse: {e}")
     
-#     print(f"--- Finished processing {sql_full_table_name}. ---\n")
+    print(f"--- Finished processing {sql_full_table_name}. ---\n")
 
-# print(" All tables have been processed. Transfer complete!")
+print(" All tables have been processed. Transfer complete!")

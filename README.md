@@ -6,7 +6,7 @@ The goal of this project is to perform a bulk data transfer of specified tables 
 
 Source: SQL Server
 
-Destination: ClickHouse
+Destination: ClickHousee
 
 Orchestration Tool: Azure Databricks (Pyspark)
 

@@ -121,7 +121,7 @@ After the script finishes, run COUNT(*) queries on a few tables in both SQL Serv
 
 Example Verification in ClickHouse:
 SQL
-SELECT count(*) FROM your_database.YourTable1;
+SELECT count(*) FROM your_database.YourTable2;
 
 
 

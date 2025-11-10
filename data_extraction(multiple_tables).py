@@ -61,4 +61,4 @@ for table_name in source_tables:
     
     print(f"--- Finished processing {sql_full_table_name}. ---\n")
 
-print(" All tables have been processed. Transfer complete!")
+print(" All tables have been processed. Transfer completed!")

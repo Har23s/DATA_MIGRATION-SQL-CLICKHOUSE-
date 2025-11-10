@@ -12,7 +12,7 @@ source_tables = [
 # 2. Define the target database in ClickHouse
 clickhouse_database = " Db_name "
 
-print(" Starting data transfer process...\n")
+print(" Starting data transfer processs...\n")
 
 # 3. Loop through each table to read, count, and write
 for table_name in source_tables:

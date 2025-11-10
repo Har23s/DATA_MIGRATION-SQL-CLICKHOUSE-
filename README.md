@@ -8,7 +8,7 @@ Source: SQL Server
 
 Destination: ClickHousee
 
-Orchestration Tool: Azure Databricks (Pyspark)
+Orchestration Tool: Azure Databricks (Pysparkk)
 
 1. Databricks Cluster Configuration
 Before you begin, ensure your Databricks cluster is set up correctly.

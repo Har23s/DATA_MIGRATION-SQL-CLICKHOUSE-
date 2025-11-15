@@ -62,6 +62,6 @@ for sql_full_table_name in source_tables:
     except Exception as e:
         print(f"    -> ERROR writing to ClickHouse: {e}")
     
-    print(f"--- Finished processing {sql_full_table_name}. ---\n")
+    print(f"--- Finished processing the table {sql_full_table_name}. ---\n")
 
 print(" All tables have been processed. Transfer complete!")

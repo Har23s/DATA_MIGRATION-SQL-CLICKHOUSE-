@@ -1,7 +1,7 @@
 # This code assumes the connection variables (sql_jdbc_url, clickhouse_jdbc_url, etc.)
 # have already been defined and are available in your Spark session.
 
-# 1. Define the source tables with their full schema names and it is different 
+# 1. Define the source tables with their full schema names and it is different from each other 
 source_tables = [
     "ED.Table_1",
     "ED.Table_2",

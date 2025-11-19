@@ -9,7 +9,7 @@ source_tables = [
 ]
 
 # 2. Define the target database in ClickHousee
-clickhouse_database = "Database_name"
+clickhouse_database = "Databases_name"
 
 print(" Starting data transfer process")
 

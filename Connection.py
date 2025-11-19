@@ -1,5 +1,5 @@
 # sql server config
-sql_server_host = ""
+sql_server_host = "180.0.0.0"
 sql_server_port = ""
 sql_database = "" 
 sql_user = ""

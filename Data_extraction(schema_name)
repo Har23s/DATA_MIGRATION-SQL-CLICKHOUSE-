@@ -50,7 +50,7 @@ for sql_full_table_name in source_tables:
         print(f"    -> ERROR counting records: {e}")
 
     # STEP 3: Write data to ClickHouse
-    print(f"  Step 3/3: Writing to ClickHouse...")
+    print(f" Step 3/3: Writing to ClickHouse..")
     try:
         df_sql.write.jdbc(
             url=clickhouse_jdbc_url,

@@ -1,4 +1,4 @@
-# This code assumes the connection variables 
+# This code assume
 
 # 1. Define the source tables with their full schema names and it is different from each other 
 source_tables = [

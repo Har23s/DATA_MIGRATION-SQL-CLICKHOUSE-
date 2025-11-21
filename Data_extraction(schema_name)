@@ -1,5 +1,4 @@
-# This code assumes the connection variables (sql_jdbc_url, clickhouse_jdbc_url, etc.)
-
+# This code assumes the connection variables 
 
 # 1. Define the source tables with their full schema names and it is different from each other 
 source_tables = [

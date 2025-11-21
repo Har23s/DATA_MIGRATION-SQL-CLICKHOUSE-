@@ -14,7 +14,7 @@ print(" Starting data transfer process")
 # 3. Loop through each table to read, count, and write
 for sql_full_table_name in source_tables:
     
-    # CORRECTED LOGIC:
+   
     # 1. For the source, we use the full name directly (e.g., "ED.table_name).
     # 2. For the destination, we extract just the table name by splitting the string.
     target_table_only = sql_full_table_name.split('.')[-1]

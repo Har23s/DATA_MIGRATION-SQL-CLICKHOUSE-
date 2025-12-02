@@ -2,7 +2,7 @@
 sql_server_host = "180.0.0.0"
 sql_server_port = "8080"
 sql_database = "demo" 
-sql_user = ""
+sql_user = "admin"
 sql_password = "" 
 
 sql_jdbc_url = f"jdbc:sqlserver://{sql_server_host}:{sql_server_port};databaseName={sql_database};trustServerCertificate=true"

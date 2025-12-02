@@ -1,7 +1,7 @@
 # sql server config
 sql_server_host = "180.0.0.0"
 sql_server_port = "8080"
-sql_database = "" 
+sql_database = "demo" 
 sql_user = ""
 sql_password = "" 
 

@@ -2,7 +2,7 @@ On prem SQL Server to ClickHouse Data Migration Guide
 This document provides a complete, generalized guide for migrating tables from a SQL Server database to a ClickHouse database using a PySpark notebook in Azure Databricks.
 
 Project Overview
-The goal of this project is to perform a bulk data transfer of specified tables from a source SQL Server database to a destination ClickHouse database. The process leverages the distributed computing power of Spark to read from the source and write to thee destination efficiently.
+The goal of  project is to perform a bulk data transfer of specified tables from a source SQL Server database to a destination ClickHouse database. The process leverages the distributed computing power of Spark to read from the source and write to thee destination efficiently.
 
 Source: SQL Server
 

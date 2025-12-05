@@ -13,7 +13,7 @@ Orchestration Tool: Azure Databricks (Pysparkk)
 1. Databricks Cluster Configuration
 Before you begin, ensure your Databricks cluster is set up correctly.
 
-Databricks Runtime Version: 13.3 LTS or higher is recommended.
+Databricks Runtime Version: 13.3 LTS or higher 
 
 Cluster Type: Use a Standard or Memory Optimized cluster, depending on the volume of data you are migrating.
 

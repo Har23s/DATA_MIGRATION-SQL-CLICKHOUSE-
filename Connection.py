@@ -14,8 +14,8 @@ sql_connection_properties = {
 }
 
 # clcikhouse config
-clickhouse_host = ""
-clickhouse_port = ""
+clickhouse_host = " "
+clickhouse_port = " "
 clickhouse_database = ""
 clickhouse_user = ""
 clickhouse_password = ""

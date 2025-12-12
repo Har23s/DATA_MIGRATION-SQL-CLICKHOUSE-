@@ -59,7 +59,7 @@ clickhouse-user: Your ClickHouse username.
 
 clickhouse-password: Your ClickHouse password.
 
- 3.  Execution Flow
+ 3. Execution Flow
 Follow these steps in order to perform the migration.
 
 Step 1: Create Destination Tables in ClickHouse (DDL)

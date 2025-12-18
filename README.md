@@ -116,7 +116,7 @@ Step 2: Run the PySpark Migration Script
 Create a new notebook in Databricks and paste the following code. This script is designed to be flexible and handles tables from different source schemas (dbo, ED, Common, etc.).
 
 
-Step 3: Verify the Dataa
+Step 3: Verify the Data
 After the script finishes, run COUNT(*) queries on a few tables in both SQL Server and ClickHouse to ensure the number of records matches and the migration was successful.
 
 Example Verification in ClickHouse:

@@ -55,6 +55,6 @@ try:
     ).count()
     print("  Success: Connection to ClickHouse is established.")
 except Exception as e:
-    print(" Failure: Could not connect to ClickHousee.")
+    print(" Failure: Could not connect to ClickHouse.")
     print(f"  Error: {str(e)[:500]}")
 

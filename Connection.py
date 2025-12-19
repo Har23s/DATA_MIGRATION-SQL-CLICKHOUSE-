@@ -9,7 +9,7 @@ sql_jdbc_url = f"jdbc:sqlserver://{sql_server_host}:{sql_server_port};databaseNa
 
 sql_connection_properties = {
   "user": sql_user,
-  "password": sql_password,
+  "passwords": sql_password,
   "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver"
 }
 
